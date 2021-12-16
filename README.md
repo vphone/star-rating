@@ -1,6 +1,7 @@
 # star-rating
-You can rating a restaurant, a hotel, an app, a product and whatever.
-Today, you rate 1 to 5 stars but you cannot rate to 0 star.
+- Pain : Sometimes, I had a very bad experience in a restaurant, an app, a product or whatever and to review, I can rate 1 to 5 stars but I cannot rate to 0 star.
+- Dream : I can rating with 0 star.
+- Fix : This is a module with stars to rate 0 to 5. 0 : represent by a black star and 1 to 5 by yellow stars.
 
 ## Project setup
 ```

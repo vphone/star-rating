@@ -35,9 +35,7 @@ export default {
 }
 
 .rate-area:not(:checked) > input {
-  position:absolute;
-  top:-9999px;
-  clip:rect(0,0,0,0);
+  display: none;
 }
 
 .rate-area:not(:checked) > label {

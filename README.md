@@ -3,6 +3,8 @@
 - Dream : I can rating with 0 star.
 - Fix : This is a module with stars to rate 0 to 5. 0 : represent by a black star and 1 to 5 by yellow stars.
 
+![alt 0 stars](https://raw.githubusercontent.com/vphone/star-rating/master/src/assets/component-0-star.png)
+![alt 3 stars](https://raw.githubusercontent.com/vphone/star-rating/master/src/assets/component-3-stars.png)
 ## Project setup
 ```
 npm install

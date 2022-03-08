@@ -5,16 +5,10 @@
       <label for="0-star" title="Poor">0 star</label>
     </div>
     <div class="rate-area">
-      <input type="radio" id="5-star" name="crating" value="5">
-      <label for="5-star" title="Amazing">5 stars</label>
-      <input type="radio" id="4-star" name="crating" value="4">
-      <label for="4-star" title="Good">4 stars</label>
-      <input type="radio" id="3-star" name="crating" value="3">
-      <label for="3-star" title="Average">3 stars</label>
-      <input type="radio" id="2-star" name="crating" value="2">
-      <label for="2-star" title="Not Good">2 stars</label>
-      <input type="radio" id="1-star" required="" name="crating" value="1" aria-required="true">
-      <label for="1-star" title="Bad">1 star</label>
+    <template v-for="item in stars">
+      <input type="radio" :id="`${item.id}-star`" :key="`input-${item.id}`" name="crating" :value="item.id">
+      <label :for="`${item.id}-star`" :key="`label-${item.id}`"  :title="item.title">{{ item.title}}</label>
+    </template>
     </div>
   </div>
 </template>
@@ -24,7 +18,38 @@ export default {
   name: 'Star',
   props: {
     active: Boolean
-  }
+  },
+  data() {
+    return {
+      stars: [
+      {
+        id: 5,
+        label: 'stars',
+        title: 'Amazing'
+      },
+      {
+        
+        id: 4,
+        label: 'stars',
+        title: 'Good'
+      },
+      {
+        id: 3,
+        label: 'stars',
+        title: 'Average'
+      },
+      {
+        id: 2,
+        label: 'stars',
+        title: 'Not good'
+      },
+      {
+        id: 1,
+        label: 'star',
+        title: 'Bad'
+      },]
+    }
+  },
 }
 </script>
 
